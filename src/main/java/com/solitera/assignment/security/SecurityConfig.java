@@ -1,4 +1,3 @@
-/*
 
 package com.solitera.assignment.security;
 
@@ -36,4 +35,3 @@ public class SecurityConfig {
    }
 
 }
-*/
