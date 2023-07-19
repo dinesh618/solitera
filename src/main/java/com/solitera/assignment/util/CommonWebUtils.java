@@ -9,12 +9,10 @@ import org.springframework.stereotype.Component;
 @Component
 public class CommonWebUtils {
 
-    public ResponseEntity<?> successResponse(String message)
+    public static ResponseEntity<?> successResponse(Object data)
     {
         SuccessResponse response = new SuccessResponse();
-
-        response.setMessage(message);
-        return new ResponseEntity<>(response, HttpStatus.OK);
+        return new ResponseEntity<>(data, HttpStatus.OK);
 
     }
     public static ResponseEntity<?> failureResponse(String message, int code)
